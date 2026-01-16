@@ -1,7 +1,6 @@
 let numeroSecreto = Math.floor(Math.random() * 100) + 1;//gera um numero aleatorio entre 1 e 100
 const maxTentativas = 10;//define numero maximo de tentativas
 let tentativasRestantes = maxTentativas;//inicia o contador de tentativas e define quantas tentativas ainda restam
-document.getElementById("tentativas").textContent = `Tentativas restantes: ${tentativasRestantes}`;//mostra tentativas iniciais na tela
 function chutar() {
     let palpite = parseInt (document.getElementById("inserirPalpite").value);//pega o valor do input e converte em numero
     if (!palpite || palpite < 1 || palpite > 100) {
